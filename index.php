@@ -1,5 +1,5 @@
 <?php
-	include("part/header.php");
+	include($_SERVER['DOCUMENT_ROOT']."/chat_room/part/header.php");
 		
 	?>
 
@@ -7,13 +7,13 @@
     <?php if(!isset($_SESSION['pseudo'])){ //condition pour faire disparaitre les elements de la page de connexion pour faire apparaitre la page de tchat ?>
 	<div class="mainBigBlock">
 		<?php
-			include("chat_components/connexionAccount.php");
-			include("chat_components/createAccount.php");
+			include($_SERVER['DOCUMENT_ROOT']."/chat_room/chat_components/connexionAccount.php");
+			include($_SERVER['DOCUMENT_ROOT']."/chat_room/chat_components/createAccount.php");
 		?>
 	</div>
 	<?php } else{ ?>
 		<div>
-			<?php include("chat_components/chat.php"); ?>
+			<?php include($_SERVER['DOCUMENT_ROOT']."/chat_room/chat_components/chat.php"); ?>
 		</div>
 			<?php
 		include("chatHistory.php");
@@ -28,5 +28,5 @@
 	}
  
  
-		include("part/footer.php");
+		include($_SERVER['DOCUMENT_ROOT']."/chat_room/part/footer.php");
 	?>

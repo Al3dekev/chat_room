@@ -1,11 +1,11 @@
 <?php
-	include("../part/header.php");
+	include($_SERVER['DOCUMENT_ROOT']."/chat_room/part/header.php");
 
 	//Verifie si les cases sont bien complétés
 	if(isset($_POST['con_email']) && isset($_POST['con_password'])){
 			
 
-		include("session.php");
+		include($_SERVER['DOCUMENT_ROOT']."/chat_room/bin/session.php");
 
 		print_r("TEST: ".$_POST['con_email']."");
 
@@ -48,5 +48,5 @@
 		// header('Location: index.php');
 	}
 		
-include("../part/footer.php");
+include($_SERVER['DOCUMENT_ROOT']."/chat_room/part/footer.php");
 ?>

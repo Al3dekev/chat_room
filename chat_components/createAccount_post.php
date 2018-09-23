@@ -1,13 +1,13 @@
 <?php
 
-	include("../part/header.php");
+	include($_SERVER['DOCUMENT_ROOT']."/chat_room/part/header.php");
 
 	if(isset($_POST['cre_email']) && isset($_POST['cre_password']) && isset($_POST['cre_pseudo'])){
 	    /*if($_POST['cre_email'] = ""){
 	        echo "champs vides ! <a href='localhost'>retour accueil</a>";
         }*/
 			
-		include("session.php");
+		include($_SERVER['DOCUMENT_ROOT']."/chat_room/bin/session.php");
 		
 		// prevois generation l'ID avec ROUND((RAND() * (500-1))+1);
 		$req = $bdd->prepare("INSERT INTO `account` (`pseudo`, `email`, `password`) VALUES (?,?,?)");
@@ -26,6 +26,6 @@
 	}
 		
 
-		include("../part/footer.php");
+		include($_SERVER['DOCUMENT_ROOT']."/chat_room/part/footer.php");
 		
 ?>
