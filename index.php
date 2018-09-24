@@ -21,11 +21,11 @@
 		<form method="post">
 			<input type='submit' name="deco" value='Deconnexion'>
 		</form>
-<?php		
+        <?php
 		if(isset($_POST['deco'])){
 			session_destroy();
 		} 
-	}
+    }
  
  
 		include($_SERVER['DOCUMENT_ROOT']."/chat_room/part/footer.php");
