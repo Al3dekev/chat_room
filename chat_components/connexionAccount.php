@@ -1,7 +1,7 @@
 <div ID="connexionAccount" class="mainPageBlock">
     <span>Connecter vous:</span>
 
-    <form action="connexionAccount_post.php" method="post">
+    <form action="chat_components/connexionAccount_post.php" method="post">
         <span>
             <label>email: <label>
                     <input type="email" name="con_email" id="con_email" required>

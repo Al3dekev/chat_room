@@ -2,7 +2,7 @@
 
 	<span>ou creez-vous un compte:</span>
 
-	<form action="createAccount_post.php" method="post">
+	<form action="chat_components/createAccount_post.php" method="post">
 		<span>
 			<label>pseudo: <label>
 			<input type="text" name="cre_pseudo" id="pseudonyme" required>

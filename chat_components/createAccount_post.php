@@ -18,7 +18,7 @@
 
 
         settingSession($arrayed['pseudo'],$arrayed['email'],$arrayed["id"]);
-		header('Location: index.php');
+		header('Location: ../index.php');
 		
 	}else{
 	    echo "marche pas <a href='localhost'>retour accueil</a>";

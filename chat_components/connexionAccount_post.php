@@ -23,7 +23,7 @@
 				
 				settingSession($userInfos['pseudo'],$userInfos['email'],$userInfos['id']);
 				//renvoi a l'accueil quand tout est ok
-				header('Location: index.php');
+				header('Location: ../index.php');
 				
 			} else{
 				?>	
