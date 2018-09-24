@@ -15,8 +15,8 @@
 		<div>
 			<?php include($_SERVER['DOCUMENT_ROOT']."/chat_room/chat_components/chat.php"); ?>
 		</div>
-			<?php
-		include("chatHistory.php");
+        <?php
+        include("chatHistory.php");
 		?>
 		<form method="post">
 			<input type='submit' name="deco" value='Deconnexion'>
