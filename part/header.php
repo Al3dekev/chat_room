@@ -11,5 +11,6 @@
         <meta charset="utf-8">
         <title>Mini-chat</title>
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="../script/jquery-3.3.1.min.js"></script>
     </head>
     <body>
